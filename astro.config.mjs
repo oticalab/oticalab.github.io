@@ -1,10 +1,8 @@
-import { defineConfig } from 'astro/config';
-import sitemap from "@astrojs/sitemap";
-import mdx from "@astrojs/mdx";
-import image from "@astrojs/image";
-import lit from "@astrojs/lit";
-
-import cloudflare from "@astrojs/cloudflare";
+import { defineConfig } from 'astro/config'
+import sitemap from '@astrojs/sitemap'
+import mdx from '@astrojs/mdx'
+import image from '@astrojs/image'
+import lit from '@astrojs/lit'
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,9 +15,7 @@ export default defineConfig({
   // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
   vite: {
     ssr: {
-      external: ["svgo"]
-    }
+      external: ['svgo'],
+    },
   },
-  output: "server",
-  adapter: cloudflare()
-});
+})
