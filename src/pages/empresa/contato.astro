@@ -1,0 +1,59 @@
+---
+import ContactForm from '../../components/forms/ContactForm.astro';
+import Layout from '../../layouts/Page.astro';
+import { Container } from '@littlesticks/odyssey-theme-components';
+
+const seo = {
+	title: 'Contato | Lab Ótica',
+	description: 'Página de Contato',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<section class="contact-hero__section">
+			<div class="contact-hero__text-section">
+				<h1>Entre em contato a gente</h1>
+				<p>
+					Teremos a maior satisfação em te atender!
+				</p>
+				<div>
+					<p>
+						<em><a href="tel:83982258089">(83) 98225-8089</a></em> • <em
+							><a href="https://wa.me/5583982258089?text=Ol%C3%A1%20Lab%20%C3%93tica,%20gostaria%20de%20te%20fazer%20uma%20pergunta!">WhatsApp</a
+							></em
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
