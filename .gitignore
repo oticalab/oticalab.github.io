@@ -2,6 +2,10 @@
 dist/
 .output/
 
+# Editors
+.idea
+.vscode
+
 # dependencies
 node_modules/
 
