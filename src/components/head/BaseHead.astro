@@ -46,9 +46,13 @@ const image = new URL('/assets/images/home/lab_otica.jpg', Astro.site);
 {settings.enableThemeSwitcher && <ThemeProvider />}
 
 <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTVZBK94XS"></script>
 <script>
   var host = window.location.hostname;
   if(host != 'localhost') {
-    // Place Google Analytics code here.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FTVZBK94XS');
   }
 </script>
