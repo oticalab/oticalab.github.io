@@ -1,5 +1,5 @@
 export default {
-  title: `Lab Ótica | Seus óculos prontos em minutos`,
+  title: `Lab Ótica | Os modelos mais desejados pelos melhores preços.`,
   description: `A melhor e mais moderna ótica em João Pessoa`,
   url: `https://labotica.com.br`, // No trailing slash!
   name: `Lab Ótica`, // The short name of the business or brand name. Used for things like the copyright in the footer.
